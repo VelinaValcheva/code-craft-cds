@@ -1,4 +1,4 @@
-class Record {
+class CD {
   quantity;
 
   constructor() {
@@ -8,7 +8,8 @@ class Record {
 
 describe("Buy CDs:", () => {
   it("when payment fails, inventory remains the same", () => {
-    const record = new Record();
-    expect(record.quantity).toBe(5);
+    const cd = new CD();
+    expect(cd.quantity).toBe(5);
   });
+
 });
